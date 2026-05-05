@@ -1,0 +1,50 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer class="bg-navy text-cream">
+  <div class="max-w-6xl mx-auto px-6 md:px-12 py-16 grid grid-cols-1 md:grid-cols-3 gap-12">
+    <div>
+      <p class="font-raleway font-black text-lg tracking-widest uppercase mb-3">Nebio Labs</p>
+      <p class="text-sm text-cream/60 leading-relaxed max-w-xs">
+        Clothing, art, and textiles made in Queens.
+        <!-- tagline placeholder -->
+      </p>
+    </div>
+    <div>
+      <p class="section-label text-cream/40 mb-4">Navigate</p>
+      <ul class="space-y-2">
+        {['Gallery', 'About', 'Shop', 'Contact'].map(page => (
+          <li>
+            <a href={`/${page.toLowerCase()}`} class="text-sm text-cream/70 hover:text-green transition-colors font-raleway tracking-wide uppercase text-xs font-semibold">
+              {page}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+    <div>
+      <p class="section-label text-cream/40 mb-4">Connect</p>
+      <a
+        href="https://instagram.com/nebiolabs"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-sm text-cream/70 hover:text-green transition-colors font-raleway tracking-wide uppercase text-xs font-semibold block mb-2"
+      >
+        Instagram ↗
+      </a>
+      <a
+        href="https://etsy.com/shop/nebiolabs"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-sm text-cream/70 hover:text-green transition-colors font-raleway tracking-wide uppercase text-xs font-semibold block"
+      >
+        Etsy Shop ↗
+      </a>
+    </div>
+  </div>
+  <div class="border-t border-cream/10 px-6 md:px-12 py-5 flex flex-col md:flex-row justify-between items-center gap-2">
+    <p class="text-xs text-cream/30 font-raleway tracking-widest uppercase">&copy; {year} Nebio Labs</p>
+    <p class="text-xs text-cream/20 font-raleway tracking-widest uppercase">Queens, NY</p>
+  </div>
+</footer>

@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;900&family=DM+Sans:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-cream text-navy font-sans;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-block bg-green text-navy font-raleway font-bold tracking-widest uppercase text-sm px-8 py-3 transition-colors duration-200 hover:bg-navy hover:text-green;
+  }
+
+  .btn-outline {
+    @apply inline-block border-2 border-current font-raleway font-bold tracking-widest uppercase text-sm px-8 py-3 transition-colors duration-200;
+  }
+
+  .section-label {
+    @apply font-raleway text-xs tracking-ultra uppercase font-semibold opacity-60;
+  }
+
+  .page-hero {
+    @apply pt-32 pb-20;
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "nebiolabs",
+  "version": "1.0.0",
+  "description": "Nebio Labs — clothing, art, and textiles from Brooklyn.",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DuganZabran/NebioLabs.git"
+  },
+  "author": "Nebio Labs",
+  "license": "ISC",
+  "dependencies": {
+    "@astrojs/tailwind": "^6.0.2",
+    "astro": "^6.2.2",
+    "tailwindcss": "^3.4.19"
+  }
+}
