@@ -9,10 +9,10 @@ const links = [
 const currentPath = Astro.url.pathname;
 ---
 
-<header class="fixed top-0 left-0 right-0 z-50 mix-blend-multiply">
+<header class="fixed top-0 left-0 right-0 z-50">
   <nav class="flex items-center justify-between px-6 md:px-12 py-5 bg-cream border-b border-navy/10">
     <a href="/" class="block hover:opacity-80 transition-opacity">
-      <img src="/nebio-logo-white-bg.png" alt="Nebio Labs" class="h-12 w-auto" />
+      <img src={`${import.meta.env.BASE_URL}nebio-logo-white-bg.png`} alt="Nebio Labs" class="h-12 w-auto" />
     </a>
     <ul class="hidden md:flex items-center gap-10">
       {links.map(({ label, href }) => (
