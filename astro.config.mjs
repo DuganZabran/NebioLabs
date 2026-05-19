@@ -3,6 +3,6 @@ import tailwind from '@astrojs/tailwind';
 
 export default defineConfig({
   site: 'https://duganzabran.github.io',
-  base: 'NebioLabs',
+  base: '/NebioLabs/',
   integrations: [tailwind()],
 });
