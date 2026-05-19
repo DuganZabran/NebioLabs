@@ -11,8 +11,8 @@ const currentPath = Astro.url.pathname;
 
 <header class="fixed top-0 left-0 right-0 z-50 mix-blend-multiply">
   <nav class="flex items-center justify-between px-6 md:px-12 py-5 bg-cream border-b border-navy/10">
-    <a href="/" class="font-raleway font-black text-xl tracking-widest uppercase text-navy hover:text-green transition-colors">
-      Nebio Labs
+    <a href="/" class="block hover:opacity-80 transition-opacity">
+      <img src="/nebio-logo-white-bg.png" alt="Nebio Labs" class="h-12 w-auto" />
     </a>
     <ul class="hidden md:flex items-center gap-10">
       {links.map(({ label, href }) => (
